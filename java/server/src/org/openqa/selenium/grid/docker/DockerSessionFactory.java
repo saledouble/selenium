@@ -153,7 +153,7 @@ public class DockerSessionFactory implements SessionFactory {
     wait.until(obj -> {
       try {
         HttpResponse response = client.execute(new HttpRequest(GET, "/status"));
-        LOG.fine(string(response));
+        LOG.finer(string(response));
         return 200 == response.getStatus();
       } catch (IOException e) {
         throw new UncheckedIOException(e);
