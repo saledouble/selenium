@@ -167,7 +167,7 @@ public class ModuleGenerator {
 
     AtomicReference<Path> moduleInfo = new AtomicReference<>();
     // Fortunately, we know the directory where the output is written
-    Files.walkFileTree(tempDir, new SimpleFileVisitor<>() {
+    Files.walkFileTree(tempDir, new SimpleFileVisitor<Path>() {
       @Override
       public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
         if ("module-info.java".equals(file.getFileName().toString())) {

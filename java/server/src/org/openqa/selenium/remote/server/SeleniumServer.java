@@ -121,7 +121,17 @@ public class SeleniumServer extends JettyServer {
     return this;
   }
 
-  /**
+  private void addServlet(Servlet driverServlet, String string) {
+	// TODO Auto-generated method stub
+	
+}
+
+private void setHandler(Route route) {
+	// TODO Auto-generated method stub
+	
+}
+
+/**
    * Stops the Jetty server
    */
   @Override
