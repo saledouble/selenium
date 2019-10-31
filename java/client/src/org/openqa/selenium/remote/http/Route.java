@@ -339,4 +339,9 @@ public abstract class Route implements HttpHandler, Routable {
       return handler.execute(req);
     }
   }
+
+public static Route combine(Route route, Route route2, Route route3, Route route4, HttpHandler with) {
+	// TODO Auto-generated method stub
+	return null;
+}
 }

@@ -124,7 +124,13 @@ public abstract class Node implements Routable, HttpHandler {
         get("/status").to(() -> new StatusHandler(this, json)).with(new SpanDecorator(tracer, req -> "node.status")));
   }
 
-  public UUID getId() {
+  private Route combine(Route route, HttpHandler with, Route route2, Route route3, Route route4, HttpHandler with2,
+		HttpHandler with3) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public UUID getId() {
     return id;
   }
 

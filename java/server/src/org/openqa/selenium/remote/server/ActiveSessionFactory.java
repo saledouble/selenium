@@ -108,7 +108,11 @@ public class ActiveSessionFactory implements SessionFactory {
     this.factories = builder.build();
   }
 
-  public synchronized ActiveSessionFactory bind(
+  public ActiveSessionFactory() {
+	// TODO Auto-generated constructor stub
+}
+
+public synchronized ActiveSessionFactory bind(
       Predicate<Capabilities> onThis,
       SessionFactory useThis) {
     Objects.requireNonNull(onThis, "Predicated needed.");

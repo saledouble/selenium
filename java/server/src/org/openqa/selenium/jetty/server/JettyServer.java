@@ -132,7 +132,15 @@ public class JettyServer implements Server<JettyServer> {
     server.setConnectors(new Connector[]{http});
   }
 
-  @Override
+  public JettyServer(BaseServerOptions configuration) {
+	// TODO Auto-generated constructor stub
+	 server = null;
+	 servletContextHandler = null;
+	 url = null;
+	 handler = null;
+}
+
+@Override
   public boolean isStarted() {
     return server.isStarted();
   }
